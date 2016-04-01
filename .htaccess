@@ -1,0 +1,12 @@
+RewriteRule ^laptop-admin$ http://localhost:8080/laptopxachtaygiare.com/wp-admin/ [NC,L]
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /laptopxachtaygiare.com/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /laptopxachtaygiare.com/index.php [L]
+</IfModule>
+
+# END WordPress
